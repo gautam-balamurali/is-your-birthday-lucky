@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from "react";
-import IsYouBirthdayLucky from "../features/is-your-birthday-lucky";
+import IsYouBirthdayLucky from "../features/is-your-birthday-lucky/view";
 
 function Section() {
   return <IsYouBirthdayLucky />;

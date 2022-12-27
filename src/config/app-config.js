@@ -7,6 +7,7 @@ const DEFAULT_CONSTANTS = {
   LUCKY_MESSAGE: "Woah! Your birthday is lucky!😎🥳 Cheer up!🍺",
   APP_DESCRIPTION:
     "Enter your date of birth and lucky number to know if your birthday is lucky or not.",
+  PRIVACY_NOTICE: "🛑Privacy notice: We're not storing any data.🛑",
 };
 
 export default DEFAULT_CONSTANTS;

@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 :root {
-  --primary: #0f172a;
-  --secondary: #cbd5e1;
-  --tertiary: #64748b;
+  --primary: #4c1d95;
+  --secondary: #c4b5fd;
+  --tertiary: #8b5cf6;
   --red: #dc2626;
 }
 
 ::placeholder {
   color: var(--secondary);
+  font-size: medium;
 }
 
 .App {
@@ -108,7 +109,8 @@ h1 {
   padding: 0.5rem;
 }
 
-h3 {
+h3,
+h4 {
   text-align: center;
   padding: 1rem;
 }

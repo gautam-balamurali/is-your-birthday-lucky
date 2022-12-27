@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import "./App.css";
 import Footer from "./components/layouts/footer";
 import Header from "./components/layouts/header";
