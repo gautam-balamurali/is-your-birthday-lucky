@@ -1,38 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --primary: #4c1d95;
+  --secondary: #c4b5fd;
+  --tertiary: #8b5cf6;
+  --red: #dc2626;
+}
+
+::placeholder {
+  color: var(--secondary);
+  font-size: medium;
+}
+
 .App {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px auto;
+  background-color: var(--secondary);
+  color: var(--primary);
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  background-color: var(--primary);
+  padding: 1rem;
+  color: var(--secondary);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem - 4rem);
 }
 
-.App-link {
-  color: #61dafb;
+.sub-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-enabled {
+  color: var(--secondary);
+  background-color: var(--primary);
+  width: max-content;
+  min-width: 100px;
+  border-radius: 0.5rem;
+  border-color: var(--primary);
+  padding: 0.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.btn-disabled {
+  color: var(--secondary);
+  background-color: var(--tertiary);
+  width: max-content;
+  min-width: 100px;
+  border-radius: 0.5rem;
+  border-color: var(--tertiary);
+  padding: 0.5rem;
+  margin: 1rem;
+  cursor: not-allowed;
+}
+
+label {
+  display: block;
+  font-size: large;
+  font-weight: 600;
+}
+
+input {
+  font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
+  color: var(--primary);
+}
+
+.section h2 {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.error-msg {
+  font-weight: bolder;
+  text-align: center;
+  margin: 1rem;
+  color: var(--red);
+}
+
+.output-msg {
+  font-weight: bolder;
+  text-align: center;
+  margin: 1rem;
+  color: var(--primary);
+}
+
+h1 {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+h3,
+h4 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  padding: 0rem 0rem;
+}
+
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-center {
+  max-width: 90%;
+  width: 100%;
+  margin: auto;
+}
+
+.container-footer {
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 600px;
+}
+
+.unordered {
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline;
+  color: var(--secondary);
+  padding: 0rem 0.5rem;
+}
+
+.footer {
+  display: block;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 2rem 0rem;
+  text-align: center;
+}
+
+.footer .heading {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.footer .link {
+  color: var(--secondary);
+}
+
+.notes-table {
+  width: 50%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 1rem;
+}
+
+.notes-table caption {
+  margin: 1rem auto;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+th,
+td {
+  border: 2px solid var(--primary);
+  width: 0%;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1281px) {
+  .App {
+    font-size: x-large;
   }
-  to {
-    transform: rotate(360deg);
+
+  label,
+  input,
+  .btn-enabled,
+  .btn-disabled {
+    font-size: larger;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 415px) {
+  .App {
+    font-size: x-large;
+  }
+
+  label,
+  input,
+  .btn-enabled,
+  .btn-disabled {
+    font-size: large;
+  }
+
+  th,
+  td {
+    font-size: smaller;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 320px) {
+  .App {
+    font-size: small;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  input {
+    width: auto;
+  }
+
+  th,
+  td {
+    font-size: smaller;
+    font-weight: 600;
   }
 }
