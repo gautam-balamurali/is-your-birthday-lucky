@@ -110,6 +110,10 @@ function IsYouBirthdayLucky() {
 
   //   <-- Render Functions Begins -->
 
+  /**
+   * Function to render app description
+   * @returns app description
+   */
   function renderAppDescriptionSection() {
     return (
       <div className="sub-section">
