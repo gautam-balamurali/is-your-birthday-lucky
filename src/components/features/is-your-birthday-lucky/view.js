@@ -178,6 +178,10 @@ function IsYouBirthdayLucky() {
     );
   }
 
+  /**
+   * Function to render output message
+   * @returns output message
+   */
   function renderOutput() {
     return (
       <p
