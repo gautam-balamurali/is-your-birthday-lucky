@@ -124,7 +124,7 @@ function IsYouBirthdayLucky() {
   }
 
   /**
-   * Function to date of birth input section
+   * Function to render date of birth input section
    * @returns date of birth input section
    */
   function renderDateOFBirthInputSection() {
