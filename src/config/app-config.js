@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const DEFAULT_CONSTANTS = {
-  INVALID_INPUT_MESSAGE: "Input should be a valid number.",
+  INVALID_INPUT_MESSAGE: "Input should be a valid integer greater than 0.",
   UNLUCKY_MESSAGE:
     "If you think you're a disappointment then maybe you're right because your birthday is not lucky at all!😔",
   LUCKY_MESSAGE: "Woah! Your birthday is lucky!😎🥳 Cheer up!🍺",

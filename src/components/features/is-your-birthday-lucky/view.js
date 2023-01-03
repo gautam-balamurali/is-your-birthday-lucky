@@ -31,7 +31,12 @@ function IsYouBirthdayLucky() {
    * @returns boolean
    */
   function isIntegerInputValid(input) {
-    if (isNotANumber(input) || containsOnlySpaces(input)) {
+    if (
+      isNotANumber(input) ||
+      containsOnlySpaces(input) ||
+      convertToInteger(input) <= 0 ||
+      input === ""
+    ) {
       integerInputErrorHandler();
       return false;
     }
