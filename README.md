@@ -5,26 +5,26 @@
 * Privacy notice: We're not storing any data.
 * Input validations are handled accordingly.
 
-# Sample input/output
+## Sample input/output
 
 ![image](https://user-images.githubusercontent.com/27736288/209832902-42e17c22-f15a-4ea4-9c50-e3b646254f93.png)
 ![image](https://user-images.githubusercontent.com/27736288/209833022-fddaf68e-ef7d-4164-8271-8f89ef26fe2d.png)
 
 
-# Tech Stack
+## Tech Stack
 
 * React
 * Netlify
 
-# Preview
+## Preview
 
 [View Live](https://is-your-bday-lucky-gautam-balamurali.netlify.app/)
 
-# License
+## License
 
 [View License](https://github.com/gautam-balamurali/is-your-birthday-lucky/blob/master/LICENSE.md)
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
